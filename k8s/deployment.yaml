@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "68dd5482-f1b8-4e3d-ba35-203a972f6e9b"
+          value: "a9793630-175e-4c03-a0a6-58389b9367e6"
         - name: Vless_Path
-          value: "/swaGu23we"
+          value: "/yswaGu23wer"
         - name: Vmess_UUID
-          value: "f2f9b049-d0b6-4ed5-9a1a-47658cf1336d"
+          value: "03b7d3d4-f3a3-40a0-9121-9136ea2b284e"
         - name: Vmess_Path
-          value: "/sjifoeo3aw"
+          value: "/rsjifoeo3awe"
         - name: Share_Path
           value: "/v2link"
