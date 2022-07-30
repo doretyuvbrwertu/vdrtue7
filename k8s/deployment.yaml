@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: piuiudur
+  name: dveihui
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: piuiudur
+      app: dveihui
   template:
     metadata:
       labels:
-        app: piuiudur
+        app: dveihui
     spec:
       containers:
-      - image: okteto.dev/piuiudur:latest
-        name: piuiudur
+      - image: okteto.dev/dveihui:latest
+        name: dveihui
         ports:
         - containerPort: 8080
         env:
