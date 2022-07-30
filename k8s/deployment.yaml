@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: weidmail
+  name: weid
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: weidmail
+      app: weid
   template:
     metadata:
       labels:
-        app: weidmail
+        app: weid
     spec:
       containers:
-      - image: okteto.dev/weidmail:latest
-        name: weidmail
+      - image: okteto.dev/weid:latest
+        name: weid
         ports:
         - containerPort: 8080
         env:
