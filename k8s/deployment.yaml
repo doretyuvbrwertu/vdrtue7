@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mailwee
+  name: weidmail
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mailwee
+      app: weidmail
   template:
     metadata:
       labels:
-        app: mailwee
+        app: weidmail
     spec:
       containers:
-      - image: okteto.dev/mailwee:latest
-        name: mailwee
+      - image: okteto.dev/weidmail:latest
+        name: weidmail
         ports:
         - containerPort: 8080
         env:
