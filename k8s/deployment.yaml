@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dveihui
+  name: caveihm
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dveihui
+      app: caveihm
   template:
     metadata:
       labels:
-        app: dveihui
+        app: caveihm
     spec:
       containers:
-      - image: okteto.dev/dveihui:latest
-        name: dveihui
+      - image: okteto.dev/caveihm:latest
+        name: caveihm
         ports:
         - containerPort: 8080
         env:
