@@ -1,3 +1,3 @@
 deploy:
-  - okteto build -t okteto.dev/postweid:latest
+  - okteto build -t okteto.dev/mailwee:latest
   - kubectl apply -f k8s
