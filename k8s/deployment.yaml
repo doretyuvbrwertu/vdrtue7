@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hinweid
+  name: asdewue
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hinweid
+      app: asdewue
   template:
     metadata:
       labels:
-        app: hinweid
+        app: asdewue
     spec:
       containers:
-      - image: okteto.dev/hinweid:latest
-        name: hinweid
+      - image: okteto.dev/asdewue:latest
+        name: asdewue
         ports:
         - containerPort: 8080
         env:
