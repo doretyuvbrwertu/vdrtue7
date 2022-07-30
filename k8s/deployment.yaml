@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: asdewue
+  name: zeiuder
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: asdewue
+      app: zeiuder
   template:
     metadata:
       labels:
-        app: asdewue
+        app: zeiuder
     spec:
       containers:
-      - image: okteto.dev/asdewue:latest
-        name: asdewue
+      - image: okteto.dev/zeiuder:latest
+        name: zeiuder
         ports:
         - containerPort: 8080
         env:
