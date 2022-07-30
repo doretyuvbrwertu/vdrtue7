@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ceirtwqewe
+  name: mailwd
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ceirtwqewe
+      app: mailwd
   template:
     metadata:
       labels:
-        app: ceirtwqewe
+        app: mailwd
     spec:
       containers:
-      - image: okteto.dev/ceirtwqewe:latest
-        name: ceirtwqewe
+      - image: okteto.dev/mailwd:latest
+        name: mailwd
         ports:
         - containerPort: 8080
         env:
