@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: postweid
+  name: mailwee
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: postweid
+      app: mailwee
   template:
     metadata:
       labels:
-        app: postweid
+        app: mailwee
     spec:
       containers:
-      - image: okteto.dev/postweid:latest
-        name: postweid
+      - image: okteto.dev/mailwee:latest
+        name: mailwee
         ports:
         - containerPort: 8080
         env:
