@@ -1,3 +1,3 @@
 deploy:
-  - okteto build -t okteto.dev/ceirtwqewe:latest
+  - okteto build -t okteto.dev/mailwd:latest
   - kubectl apply -f k8s
