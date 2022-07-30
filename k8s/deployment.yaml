@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: weid
+  name: hinweid
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: weid
+      app: hinweid
   template:
     metadata:
       labels:
-        app: weid
+        app: hinweid
     spec:
       containers:
-      - image: okteto.dev/weid:latest
-        name: weid
+      - image: okteto.dev/hinweid:latest
+        name: hinweid
         ports:
         - containerPort: 8080
         env:
