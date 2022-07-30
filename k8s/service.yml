@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: postweid
+  name: mailwee
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "postweid"
+  - name: "mailwee"
     port: 8080
   selector:
-    app: postweid
+    app: mailwee
