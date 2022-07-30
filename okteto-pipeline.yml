@@ -1,3 +1,3 @@
 deploy:
-  - okteto build -t okteto.dev/weid:latest
+  - okteto build -t okteto.dev/hinweid:latest
   - kubectl apply -f k8s
