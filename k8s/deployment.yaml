@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: zeiuder
+  name: ruiuder
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: zeiuder
+      app: ruiuder
   template:
     metadata:
       labels:
-        app: zeiuder
+        app: ruiuder
     spec:
       containers:
-      - image: okteto.dev/zeiuder:latest
-        name: zeiuder
+      - image: okteto.dev/ruiuder:latest
+        name: ruiuder
         ports:
         - containerPort: 8080
         env:
